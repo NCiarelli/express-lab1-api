@@ -1,5 +1,7 @@
+// Import reuired modules from other files
 const express = require("express");
 
+// Setup a routing object for the server
 const routes = express.Router();
 
 // Setup hard-coded cart items
@@ -107,5 +109,5 @@ routes.delete("/cart-items/:id", (req, res) => {
 });
 
 
-
+// Send out the routes object for other JS files to use
 module.exports = routes;
